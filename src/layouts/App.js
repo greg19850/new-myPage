@@ -11,9 +11,7 @@ function App() {
         {<Menu />}
       </header>
       <main>
-        <section className="page">
-          {<Page />}
-        </section>
+        {<Page />}
       </main>
       <footer>
         {<Footer />}

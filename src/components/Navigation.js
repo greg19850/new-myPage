@@ -5,6 +5,7 @@ const Navigation = () => {
     <ul className='navigation'>
       <li>Home</li>
       <li>Profile</li>
+      <li>Skills</li>
       <li>Projects</li>
       <li>Contact</li>
     </ul>
