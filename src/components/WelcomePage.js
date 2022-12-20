@@ -1,17 +1,18 @@
 import React from 'react';
 
-import myPhoto from '../img/me.jpg'
+import Image from 'react-bootstrap/Image'
+
+import myPhoto from '../img/computer.jpg'
 
 const WelcomePage = () => {
 
   return (
-    <div className='welcome'>
+    <div className='welcome-page'>
       <div className='welcome-text'>
+        Hi, I'm Greg
         Welcome to my personal page
       </div>
-      <div className="img-container">
-        <img src={myPhoto} alt="Greg" />
-      </div>
+      <Image fluid rounded src={myPhoto} alt="Welcome photo" />
     </div>
   );
 }
