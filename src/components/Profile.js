@@ -1,9 +1,11 @@
 import React from 'react';
 
-import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image'
+import '../styles/Profile.scss'
 
-import mePhoto from '../img/me.png'
+import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
+
+import mePhoto from '../img/me.png';
 import AboutMe from './AboutMe';
 
 const Profile = () => {
@@ -14,7 +16,7 @@ const Profile = () => {
         <Image fluid src={mePhoto} alt="Greg" />
       </div>
       {<AboutMe />}
-      <Button variant="primary" className='button cv'>Check my Résumé</Button>
+      <Button variant="outline-light" className='button cv rounded-0' size='lg'>Check my Résumé</Button>
     </div>
   );
 }

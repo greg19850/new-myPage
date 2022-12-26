@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .App {
@@ -16,66 +17,23 @@
     .name {
       font-size: 1.5rem;
     }
-  }
 
-  .welcome-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 700px;
-    background-color: #000;
 
-    .welcome-text {
-      font-size: calc(1.525rem + 3.3vw);
-      width: 500px;
-      align-self: center;
+    .link {
+      color: #bbb;
+
+      &:hover {
+        color: #fff;
+      }
     }
 
-    img {
-      image-orientation: from-image;
-      width: 40%;
-    }
-
-  }
-
-  .profile {
-    text-align: center;
-    margin: 0 auto;
-    padding: 40px 0;
-    background-color: #212529;
-
-    .profile-head {
+    .socials {
       display: flex;
-      position: relative;
-      margin: 0 auto;
-      justify-content: center;
-      height: calc(1.5rem + 20vw);
-      ;
-      background-image: url('../img/street-ga677ccf94_1280.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 95%;
-      overflow: hidden;
 
-      h1 {
-        line-height: calc(1.5rem + 20vw);
-        font-size: calc(1.525rem + 3.3vw);
+      .social-link {
+        color: green;
       }
-
-      img {
-        width: 19vw;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
-
-    }
-
-    .about-me {
-      width: 80%;
-      text-align: center;
-      margin: 0 auto;
     }
   }
+
 }
