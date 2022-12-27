@@ -15,7 +15,7 @@ const codeIco = <HiCode className="social-icon code" />;
 
 const Navigation = () => {
   return (
-    <Navbar id='home' className='bg-black' bg="dark" variant="dark" expand="lg">
+    <Navbar id='home' className='bg-transparent' bg="dark" variant="dark" expand="lg">
       <Navbar.Brand className='name' href="#home">
         {codeIco} Greg Mrowczynski
       </Navbar.Brand>

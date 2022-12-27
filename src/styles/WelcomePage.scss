@@ -3,7 +3,7 @@
   justify-content: space-around;
   align-items: center;
   height: calc(3.5rem + 40vw);
-  background-color: #000;
+  // background-color: #111;
 
   .welcome-text {
     font-size: calc(1.6rem + 2.5vw);
@@ -13,13 +13,16 @@
     padding: 10px;
 
     @media screen and (max-width: 680px) {
-      font-size: 1.2rem
+      font-size: calc(1.2rem + 1.5vw);
+    }
+
+    @media screen and (max-width: 380px) {
+      font-size: calc(.8rem + 1.2vw);
     }
   }
 
   img {
     image-orientation: from-image;
-    width: 55%;
     padding: 0 40px 0 10px;
   }
 

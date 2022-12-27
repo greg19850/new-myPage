@@ -13,10 +13,10 @@ const Profile = () => {
     <div id='profile' className='profile'>
       <div className='profile-head'>
         <h1>Profile</h1>
-        <Image fluid src={mePhoto} alt="Greg" />
+        <Image className='w-25' src={mePhoto} alt="Greg" />
       </div>
       {<AboutMe />}
-      <Button variant="outline-light" className='button cv rounded-0' size='lg'>Check my Résumé</Button>
+      <Button variant="warning" className='button cv rounded-0' size='lg'>Check my Résumé</Button>
     </div>
   );
 }

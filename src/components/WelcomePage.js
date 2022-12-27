@@ -11,10 +11,10 @@ const WelcomePage = () => {
 
   return (
     <div className='welcome-page'>
-      <div className='welcome-text'>
+      <div className='welcome-text w-50'>
         {welcomeMessage}
       </div>
-      <Image fluid rounded src={myPhoto} alt="Welcome photo" />
+      <Image className='w-50' rounded src={myPhoto} alt="Welcome photo" />
     </div>
   );
 }
