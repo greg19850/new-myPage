@@ -38,7 +38,7 @@ const Navigation = () => {
             Contact
           </Nav.Link>
         </Nav>
-        <Nav className="flex-row">
+        {/* <Nav className="flex-row">
           <Nav.Link className='link social-link' href="mailto:greg19850@gmail.com" target="_blank" rel="noreferrer">
             {gmailIco}
           </Nav.Link>
@@ -48,7 +48,7 @@ const Navigation = () => {
           <Nav.Link className='link social-link' href="https://github.com/greg19850" target="_blank" rel="noreferrer">
             {githubIco}
           </Nav.Link>
-        </Nav>
+        </Nav> */}
       </Navbar.Collapse>
     </Navbar>
   );

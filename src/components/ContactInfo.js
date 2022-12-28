@@ -16,7 +16,7 @@ const contacts = [
   {
     id: 2,
     name: "LinkedIn",
-    link: "www.linkedin.com/in/greg-mrowczynski",
+    link: "https://linkedin.com/in/greg-mrowczynski",
     logo: linkedinIco,
   },
   {
@@ -29,17 +29,18 @@ const contacts = [
 
 const ContactInfo = () => {
   const contactPages = contacts.map(contact => (
-    <li key={contact.id}><a className="link" href={contact.link} target="_blank" rel="noreferrer">{contact.logo} {contact.name}</a></li>
+    <li key={contact.id}><a className="link" href={contact.link} target="_blank" rel="noreferrer">{contact.logo}</a></li>
   ))
   return (
     <div className='contact-info'>
       <h2>Contact</h2>
-      <p>If you would like to get in touch, please use contact form, or any of below chanels:</p>
+      <p>If you would like to get in touch, please use contact form, or any of below links:</p>
+      <p>greg19850@gmail.com</p>
       <ul className="contact-social">
         {contactPages}
       </ul>
     </div>
   );
-}
+};
 
 export default ContactInfo;

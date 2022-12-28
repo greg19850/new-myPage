@@ -9,13 +9,12 @@ import Button from 'react-bootstrap/Button';
 import '../styles/Projects.scss'
 
 const ProjectsPage = () => {
-
   return (
     <div id='projects' className='projects'>
       <h2>Past Projects:</h2>
       <Carousel interval={null}>
-        {ProjectsList.map(project => (
-          <Carousel.Item className='carousel container-fluid'>
+        {ProjectsList.map((project, i) => (
+          <Carousel.Item className='carousel'>
             <div className='project-card'>
               <div className='img-container'>
                 <Image
