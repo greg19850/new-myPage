@@ -6,9 +6,9 @@ import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 
 import mePhoto from '../img/me.png';
-import AboutMe from './AboutMe';
+import AboutMe from '../components/AboutMe';
 
-const Profile = () => {
+const ProfilePage = () => {
   return (
     <div id='profile' className='profile'>
       <div className='profile-head'>
@@ -21,4 +21,4 @@ const Profile = () => {
   );
 }
 
-export default Profile;
+export default ProfilePage;

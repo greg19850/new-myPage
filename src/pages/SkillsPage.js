@@ -1,10 +1,10 @@
 import React from 'react';
 
-import SkillsCollection from './SkillsCollection';
+import SkillsCollection from '../components/SkillsCollection';
 
 import '../styles/Skills.scss'
 
-const Skills = () => {
+const SkillsPage = () => {
   return (
     <div id='skills' className='skills-container'>
       <h2>My Skills:</h2>
@@ -13,4 +13,4 @@ const Skills = () => {
   );
 }
 
-export default Skills;
+export default SkillsPage;

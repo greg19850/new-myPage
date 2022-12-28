@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjectsList from './ProjectsList';
+import ProjectsList from '../components/ProjectsList';
 
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image'
@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 
 import '../styles/Projects.scss'
 
-const Projects = () => {
+const ProjectsPage = () => {
 
   return (
     <div id='projects' className='projects'>
@@ -18,7 +18,7 @@ const Projects = () => {
           <Carousel.Item className='carousel container-fluid'>
             <div className='project-card'>
               <div className='img-container'>
-                <img
+                <Image
                   className='card-img'
                   src={project.img}
                   alt={project.title}
@@ -45,4 +45,4 @@ const Projects = () => {
   );
 }
 
-export default Projects
+export default ProjectsPage
