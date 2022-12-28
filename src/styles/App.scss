@@ -11,30 +11,7 @@
   color: #fff;
   padding: 0;
 
-  .menu {
-    border-bottom: 1px solid #6c757d;
-    padding: 0 20px;
-
-    .name {
-      font-size: 1.5rem;
-    }
-
-
-    .link {
-      color: #bbb;
-
-      &:hover {
-        color: #fff;
-      }
-    }
-
-    .socials {
-      display: flex;
-
-      .social-link {
-        color: green;
-      }
-    }
+  .footer {
+    text-align: center;
   }
-
 }

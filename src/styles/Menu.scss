@@ -1,0 +1,37 @@
+.menu {
+  border-bottom: 1px solid #6c757d;
+  padding: 0 20px;
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .toggler {
+    color: transparent;
+    border: none;
+  }
+
+
+  .link {
+    color: #bbb;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .socials {
+    display: flex;
+    list-style: none;
+
+    .social-link {
+      color: #bbb;
+
+      @media screen and (max-width: 768px) {
+        margin-right: 20px;
+      }
+    }
+
+
+  }
+}

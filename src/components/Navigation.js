@@ -15,11 +15,11 @@ const codeIco = <HiCode className="social-icon code" />;
 
 const Navigation = () => {
   return (
-    <Navbar id='home' className='bg-transparent' bg="dark" variant="dark" expand="lg">
+    <Navbar id='home' className='navbar bg-transparent' bg="dark" variant="dark" expand="md" collapseOnSelect>
       <Navbar.Brand className='name' href="#home">
         {codeIco} Greg Mrowczynski
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle className='toggler' aria-controls='responsive-navbar-nav' />
       <Navbar.Collapse className="justify-content-end">
         <Nav >
           <Nav.Link className='link' href="#home">
@@ -38,17 +38,17 @@ const Navigation = () => {
             Contact
           </Nav.Link>
         </Nav>
-        {/* <Nav className="flex-row">
+        <Nav className="flex-row socials">
           <Nav.Link className='link social-link' href="mailto:greg19850@gmail.com" target="_blank" rel="noreferrer">
             {gmailIco}
           </Nav.Link>
-          <Nav.Link className='link social-link' href="www.linkedin.com/in/greg-mrowczynski" target="_blank" rel="noreferrer">
+          <Nav.Link className='link social-link' href="https://linkedin.com/in/greg-mrowczynski" target="_blank" rel="noreferrer">
             {linkedinIco}
           </Nav.Link>
           <Nav.Link className='link social-link' href="https://github.com/greg19850" target="_blank" rel="noreferrer">
             {githubIco}
           </Nav.Link>
-        </Nav> */}
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   );

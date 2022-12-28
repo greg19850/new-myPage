@@ -3,8 +3,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div>
-      This is Footer
+    <div className='footer'>
+      @2022 Greg Mrowczynski
     </div>
   );
 }
