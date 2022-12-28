@@ -1,6 +1,8 @@
 import React from 'react';
 
-import '../styles/Profile.scss'
+import '../styles/Profile.scss';
+
+import Pdf from '../img/Greg_Mrowczynski_Resume.pdf';
 
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
@@ -16,7 +18,7 @@ const ProfilePage = () => {
         <Image className='w-25' src={mePhoto} alt="Greg" />
       </div>
       {<AboutMe />}
-      <Button variant="warning" className='button cv rounded-0' size='lg'>Check my Résumé</Button>
+      <Button href={Pdf} target="_blank" variant="warning" className='button cv rounded-0' size='lg'>Check my Résumé</Button>
     </div>
   );
 }

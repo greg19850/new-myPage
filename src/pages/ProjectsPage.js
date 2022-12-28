@@ -13,7 +13,7 @@ const ProjectsPage = () => {
     <div id='projects' className='projects'>
       <h2>Past Projects:</h2>
       <Carousel interval={null}>
-        {ProjectsList.map((project, i) => (
+        {ProjectsList.map(project => (
           <Carousel.Item className='carousel'>
             <div className='project-card'>
               <div className='img-container'>

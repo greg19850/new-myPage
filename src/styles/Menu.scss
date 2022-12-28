@@ -21,17 +21,17 @@
   }
 
   .socials {
-    display: flex;
-    list-style: none;
 
     .social-link {
       color: #bbb;
+
+      &:hover {
+        color: #fff;
+      }
 
       @media screen and (max-width: 768px) {
         margin-right: 20px;
       }
     }
-
-
   }
 }

@@ -3,12 +3,16 @@
   text-align: center;
   padding: 20px 0;
 
+  h2 {
+    margin-top: 20px;
+  }
+
   .carousel {
     height: 100%;
 
     .project-card {
       display: flex;
-      margin: 40px auto;
+      margin: 20px auto 40px;
       width: 80%;
       min-height: 600px;
       background-color: #eee;

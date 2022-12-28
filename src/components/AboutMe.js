@@ -4,9 +4,9 @@ const AboutMe = () => {
   return (
     <div className='about-me'>
       <div className="personal-section my-info">
-        <h3>
+        <h2>
           My name is <span>Grzegorz 'Greg' Mrowczynski</span>
-        </h3>
+        </h2>
         <div className="story my-story">
           I'm originally from Poland, but I've been living in United Kingdom since 2012. I've had successful career in manufacturing, which began from machine operator roles, through Quality Technician, to finally working as Quality Engineer for last 4 years. I have worked for iconic worldwide aerospace and automotive brands, tier one suppliers of Airbus, Bentley, and directly for LEVC, producer of famous London Taxis.
         </div>
