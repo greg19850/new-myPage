@@ -9,12 +9,13 @@ import Button from 'react-bootstrap/Button';
 import '../styles/Projects.scss'
 
 const ProjectsPage = () => {
+
   return (
     <div id='projects' className='projects'>
       <h2>Past Projects:</h2>
       <Carousel variant="dark" interval={null}>
         {ProjectsList.map(project => (
-          <Carousel.Item className='carousel'>
+          <Carousel.Item key={project.id} className='carousel'>
             <div className='project-card'>
               <div className='img-container'>
                 <Image
@@ -30,17 +31,18 @@ const ProjectsPage = () => {
                   <Button href={project.link1} target="_blank" variant="warning" className='button  rounded-0' size='lg'>Website</Button>
                   <Button href={project.link2} target="_blank" variant="warning" className='button rounded-0' size='lg'>Github</Button>
                 </div>
-                <div className='technologies'>
+                <div className='tech-container'>
                   <h5>Used Technologies:</h5>
-                  {project.technologies.map(tech => tech)}
+                  <div className='technologies'>
+                    {project.technologies.map(tech => <div key={Math.random() * 1000}>{tech}</div>)}
+                  </div>
                 </div>
               </div>
             </div>
           </Carousel.Item>
-        )
-        )}
-      </Carousel>
-    </div>
+        ))}
+      </Carousel >
+    </div >
   );
 }
 
