@@ -12,7 +12,7 @@ const ProjectsPage = () => {
   return (
     <div id='projects' className='projects'>
       <h2>Past Projects:</h2>
-      <Carousel interval={null}>
+      <Carousel variant="dark" interval={null}>
         {ProjectsList.map(project => (
           <Carousel.Item className='carousel'>
             <div className='project-card'>
@@ -27,8 +27,8 @@ const ProjectsPage = () => {
                 <h2>{project.title}</h2>
                 <p>{project.text}</p>
                 <div className="buttons">
-                  <Button variant="warning" className='button rounded-0' size='lg'>Github</Button>
-                  <Button variant="warning" className='button  rounded-0' size='lg'>Website</Button>
+                  <Button href={project.link1} target="_blank" variant="warning" className='button  rounded-0' size='lg'>Website</Button>
+                  <Button href={project.link2} target="_blank" variant="warning" className='button rounded-0' size='lg'>Github</Button>
                 </div>
                 <div className='technologies'>
                   <h5>Used Technologies:</h5>
