@@ -13,9 +13,9 @@ const ProjectsPage = () => {
   return (
     <div id='projects' className='projects'>
       <h2>Past Projects:</h2>
-      <Carousel variant="dark" interval={null}>
+      <Carousel className='carousel' variant="dark" interval={null}>
         {ProjectsList.map(project => (
-          <Carousel.Item key={project.id} className='carousel'>
+          <Carousel.Item key={project.id} className='carousel-item'>
             <div className='project-card'>
               <div className='img-container'>
                 <Image

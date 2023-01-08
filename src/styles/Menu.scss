@@ -1,10 +1,5 @@
 .menu {
   border-bottom: 1px solid #6c757d;
-  padding: 0 20px;
-
-  .name {
-    font-size: 1.5rem;
-  }
 
   .toggler {
     color: transparent;
@@ -12,26 +7,23 @@
   }
 
 
-  .link {
+  .nav-link {
     color: #bbb;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: .8rem !important;
+    padding-right: .8rem !important;
 
     &:hover {
       color: #fff;
     }
   }
 
+
   .socials {
 
-    .social-link {
-      color: #bbb;
-
-      &:hover {
-        color: #fff;
-      }
-
-      @media screen and (max-width: 768px) {
-        margin-right: 20px;
-      }
+    @media screen and (max-width: 768px) {
+      margin-right: 20px;
     }
   }
 }

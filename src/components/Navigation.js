@@ -15,41 +15,43 @@ const codeIco = <HiCode className="social-icon code" />;
 
 const Navigation = () => {
   return (
-    <Navbar id='home' className='navbar bg-transparent' bg="dark" variant="dark" expand="md" collapseOnSelect>
-      <Navbar.Brand className='name' href="#home">
-        {codeIco} Greg Mrowczynski
-      </Navbar.Brand>
-      <Navbar.Toggle className='toggler' aria-controls='responsive-navbar-nav' />
-      <Navbar.Collapse className="justify-content-end">
-        <Nav >
-          <Nav.Link className='link' href="#home">
-            Home
-          </Nav.Link>
-          <Nav.Link className='link' href="#profile">
-            Profile
-          </Nav.Link>
-          <Nav.Link className='link' href="#skills">
-            Skills
-          </Nav.Link>
-          <Nav.Link className='link' href="#projects">
-            Projects
-          </Nav.Link>
-          <Nav.Link className='link' href="#contact">
-            Contact
-          </Nav.Link>
-        </Nav>
-        <Nav className="flex-row socials">
-          <Nav.Link className='link social-link' href="mailto:greg19850@gmail.com" target="_blank" rel="noreferrer">
-            {gmailIco}
-          </Nav.Link>
-          <Nav.Link className='link social-link' href="https://linkedin.com/in/greg-mrowczynski" target="_blank" rel="noreferrer">
-            {linkedinIco}
-          </Nav.Link>
-          <Nav.Link className='link social-link' href="https://github.com/greg19850" target="_blank" rel="noreferrer">
-            {githubIco}
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
+    <Navbar id='home' className='navbar' bg="transparent" variant="dark" expand="md" collapseOnSelect>
+      <div className="container">
+        <Navbar.Brand className='name' href="#home">
+          {codeIco} Greg Mrowczynski
+        </Navbar.Brand>
+        <Navbar.Toggle className='toggler' aria-controls='responsive-navbar-nav' />
+        <Navbar.Collapse className="justify-content-end">
+          <Nav>
+            <Nav.Link className='nav-link' href="#home">
+              Home
+            </Nav.Link>
+            <Nav.Link className='nav-link' href="#profile">
+              Profile
+            </Nav.Link>
+            <Nav.Link className='nav-link' href="#skills">
+              Skills
+            </Nav.Link>
+            <Nav.Link className='nav-link' href="#projects">
+              Projects
+            </Nav.Link>
+            <Nav.Link className='nav-link' href="#contact">
+              Contact
+            </Nav.Link>
+          </Nav>
+          <Nav className="flex-row socials">
+            <Nav.Link className='nav-link social-link' href="mailto:greg19850@gmail.com" target="_blank" rel="noreferrer">
+              {gmailIco}
+            </Nav.Link>
+            <Nav.Link className='nav-link social-link' href="https://linkedin.com/in/greg-mrowczynski" target="_blank" rel="noreferrer">
+              {linkedinIco}
+            </Nav.Link>
+            <Nav.Link className='nav-link social-link' href="https://github.com/greg19850" target="_blank" rel="noreferrer">
+              {githubIco}
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </div>
     </Navbar>
   );
 }

@@ -1,5 +1,4 @@
 .projects {
-  min-height: 600px;
   text-align: center;
   padding: 20px 0;
 
@@ -8,81 +7,128 @@
   }
 
   .carousel {
+    height: 650px;
 
+    .carousel-item {
+      height: 650px;
 
-    .project-card {
-      display: flex;
-      margin: 20px auto;
-      width: 95%;
-      min-height: 600px;
-      background-color: #eee;
-
-      .img-container {
+      .project-card {
         display: flex;
         align-items: center;
-        width: 50%;
-        padding: 10px;
+        margin: 10px auto;
+        height: 100%;
+        width: 95%;
+        background-color: #eee;
 
+        .img-container {
+          display: flex;
+          align-items: center;
+          width: 50%;
+          height: 90%;
+          padding: 10px;
 
-        @media screen and (max-width: 980px) {
-          height: 45%;
-          width: 100%;
-          padding: 0;
-        }
-      }
+          .card-img {
+            height: 100%;
 
-      .card-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        width: 50%;
-        color: #000;
-        padding: 20px;
-
-        h2 {
-          margin-top: 10px;
-        }
-
-        p {
-          text-align: center;
-          font-size: 1.2rem;
-          width: 80%;
-        }
-
-        .buttons {
-          .button {
-            margin: 5px 10px;
-          }
-        }
-
-        .tech-container {
-          margin-top: 10px;
-          text-align: center;
-
-          .technologies {
-            display: flex;
-            justify-content: center;
-
-            .tech-icon {
-              font-size: 1.5rem;
-              margin: 5px;
+            @media screen and (max-width: 768px) {
+              margin: 0 auto;
+              height: 95%;
+              width: 95%;
             }
           }
+
+          @media screen and (max-width: 992px) {
+            height: 80%;
+          }
+
+          @media screen and (max-width: 768px) {
+            height: 45%;
+            width: 75%;
+            padding: 5px;
+          }
+
+          @media screen and (max-width: 768px) {
+            height: 40%;
+            width: 90%;
+          }
         }
 
-        @media screen and (max-width: 980px) {
-          padding: 5px;
-          height: 45%;
-          width: 100%;
+        .card-text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          width: 50%;
+          height: 90%;
+          color: #000;
+          padding: 20px;
+
+          h2 {
+            margin-top: 10px;
+          }
+
+          p {
+            text-align: center;
+            font-size: 1.2rem;
+            width: 80%;
+          }
+
+          .buttons {
+            .button {
+              margin: 5px 10px;
+            }
+          }
+
+          .tech-container {
+            margin-top: 10px;
+            text-align: center;
+
+            .technologies {
+              display: flex;
+              justify-content: center;
+
+              .tech-icon {
+                font-size: 1.5rem;
+                margin: 5px;
+              }
+            }
+          }
+
+          @media screen and (max-width: 768px) {
+            padding: 5px;
+            height: 45%;
+            width: 100%;
+          }
         }
+
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+          height: 100%;
+        }
+
+        // @media screen and (max-width: 576px) {
+        //   height: 900px;
+        // }
+
       }
 
-      @media screen and (max-width: 980px) {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 40px;
+      @media screen and (max-width: 768px) {
+        height: 750px;
       }
+
+      @media screen and (max-width: 576px) {
+        height: 900px;
+      }
+
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 750px;
+    }
+
+    @media screen and (max-width: 576px) {
+      height: 900px;
     }
   }
 }

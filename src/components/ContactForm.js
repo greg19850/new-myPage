@@ -50,7 +50,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Form className="form" noValidate validated={validated} onSubmit={handleFormSubmit}>
+    <Form className="form" action='' method='POST' noValidate validated={validated} onSubmit={handleFormSubmit}>
       <Form.Group className="mb-2" controlId="formName">
         <Form.Label className='label col-form-label-sm fw-bold mb-0'>Name*</Form.Label>
         <Form.Control type='text' name='name' size='sm' className='rounded-0' placeholder="Enter your name" value={name} onChange={handleInputChange} required />

@@ -1,28 +1,27 @@
 .welcome-page {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: calc(3.5rem + 40vw);
 
-  .welcome-text {
-    font-size: calc(1.6rem + 2.5vw);
-    text-align: center;
-    align-self: center;
-    text-transform: uppercase;
-    padding: 10px;
+  .text-container {
+    display: flex;
+    align-items: center;
 
-    @media screen and (max-width: 680px) {
-      font-size: calc(1.2rem + 1.5vw);
-    }
+    .welcome-text {
+      font-size: calc(1.6rem + 2.5vw);
+      text-transform: uppercase;
 
-    @media screen and (max-width: 380px) {
-      font-size: calc(.8rem + 1.2vw);
+      @media screen and (max-width: 768px) {
+        font-size: calc(1.2rem + 1.5vw);
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: calc(.8rem + 1.2vw);
+      }
     }
   }
 
-  img {
-    image-orientation: from-image;
-    padding: 0 40px 0 10px;
-  }
+  .welcome-img {
+    position: relative;
+    display: flex;
+    align-items: center;
 
+  }
 }
