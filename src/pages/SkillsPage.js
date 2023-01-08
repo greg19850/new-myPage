@@ -1,15 +1,17 @@
 import React from 'react';
 
+import Container from 'react-bootstrap/Container';
+
 import SkillsCollection from '../components/SkillsCollection';
 
 import '../styles/Skills.scss'
 
 const SkillsPage = () => {
   return (
-    <div id='skills' className='skills-container'>
-      <h2>My Skills</h2>
+    <Container id='skills' className='skills-container py-4'>
+      <h2 className='mb-3'>My Skills</h2>
       {<SkillsCollection />}
-    </div>
+    </Container>
   );
 }
 

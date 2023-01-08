@@ -105,10 +105,10 @@ const SkillsCollection = () => {
   const services = serviceArray.map(service => (
     <div
       key={service.id}
-      className='service-item'
+      className='service-item p-2 m-1'
     >
       <service.logo
-        className='service-icon'
+        className='service-icon mb-3'
         style={{
           color: service.color,
           backgroundColor: service.id === 16 && '#000'
