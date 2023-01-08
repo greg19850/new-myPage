@@ -14,10 +14,10 @@ import '../styles/Profile.scss';
 const ProfilePage = () => {
   return (
     <Container id='profile' className='profile py-5'>
-      <div className='profile-head py-5'>
+      <div className='profile-head py-3'>
         <div className="dark-overlay">
           <h1>Profile</h1>
-          <Image className='w-25' src={mePhoto} alt="Greg" />
+          <Image src={mePhoto} alt="Greg" />
         </div>
       </div>
 

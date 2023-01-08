@@ -2,6 +2,7 @@ import React from 'react';
 
 import ProjectsList from '../components/ProjectsList';
 
+import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button';
@@ -11,12 +12,12 @@ import '../styles/Projects.scss'
 const ProjectsPage = () => {
 
   return (
-    <div id='projects' className='projects'>
-      <h2>Past Projects:</h2>
+    <Container id='projects' className='projects text-center px-0 py-4'>
+      <h2 className='my-4'>Past Projects:</h2>
       <Carousel className='carousel' variant="dark" interval={null}>
         {ProjectsList.map(project => (
           <Carousel.Item key={project.id} className='carousel-item'>
-            <div className='project-card'>
+            <div className='project-card p-3'>
               <div className='img-container'>
                 <Image
                   className='card-img'
@@ -24,7 +25,7 @@ const ProjectsPage = () => {
                   alt={project.title}
                 />
               </div>
-              <div className='card-text'>
+              <div className='card-text p-3'>
                 <h2>{project.title}</h2>
                 <p>{project.text}</p>
                 <div className="buttons">
@@ -42,7 +43,7 @@ const ProjectsPage = () => {
           </Carousel.Item>
         ))}
       </Carousel >
-    </div >
+    </Container >
   );
 }
 

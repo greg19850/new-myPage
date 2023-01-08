@@ -105,7 +105,7 @@ const SkillsCollection = () => {
   const services = serviceArray.map(service => (
     <div
       key={service.id}
-      className='service-item p-2 m-1'
+      className='service-item p-2'
     >
       <service.logo
         className='service-icon mb-3'

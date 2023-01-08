@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <div className='footer'>
-      @2022 Greg Mrowczynski
+      <p>&copy;2023 Greg Mrowczynski</p>
     </div>
   );
 }

@@ -10,8 +10,8 @@ import rateExchange from "../img/portfolioProjects/rate-exchange-calculator-API.
 import arrayMethods from "../img/portfolioProjects/DOM-Array-methods.png";
 import expenseTracker from "../img/portfolioProjects/expense-tracker.png";
 import singlePageApp from "../img/portfolioProjects/SPA.png";
-import magic8ball from "../img/portfolioProjects/magic8ball.png";
-import myNotes from "../img/portfolioProjects/myNotes.png"
+import myNotes from "../img/portfolioProjects/myNotes.png";
+import myPage from "../img/portfolioProjects/Greg M Page.png"
 
 import { SiCss3, SiHtml5, SiJavascript, SiReact, SiGithub, SiNetlify, SiNodedotjs } from 'react-icons/si';
 import { TbApi, TbBrandVercel } from "react-icons/tb";
@@ -30,6 +30,17 @@ const vercelIco = <TbBrandVercel className="tech-icon vercel" />;
 const ProjectsList = [
   {
     id: 1,
+    link1: "https://my-personal-page-gm.vercel.app/",
+    link2: "https://github.com/greg19850/my-page",
+    icon1: "WWW",
+    icon2: "Github",
+    img: myPage,
+    title: "My Portfolio Page Retro Style",
+    text: "My personal page, made in retro game style from 1980's. I created this page as an original portfolio page, but decided to change style, however it's worth checking my original page as it has few different, interesting solutions.",
+    technologies: [reactIco, htmlIco, cssIco, javaScriptIco, gitHubIco, vercelIco],
+  },
+  {
+    id: 2,
     link1: "https://form-validator-beige.vercel.app/",
     link2: "https://github.com/greg19850/Form-Validator",
     icon1: "WWW",
@@ -40,7 +51,7 @@ const ProjectsList = [
     technologies: [htmlIco, cssIco, javaScriptIco, gitHubIco, vercelIco],
   },
   {
-    id: 2,
+    id: 3,
     link1: "https://hangmann-game.netlify.app/",
     link2: "https://github.com/greg19850/Hangman",
     icon1: "WWW",
@@ -51,7 +62,7 @@ const ProjectsList = [
     technologies: [htmlIco, cssIco, javaScriptIco, gitHubIco, netlifyIco]
   },
   {
-    id: 3,
+    id: 4,
     link1: "https://movie-tickets-booking-vert.vercel.app/",
     link2: "https://github.com/greg19850/Movie-Tickets-Booking",
     icon1: "WWW",
@@ -62,7 +73,7 @@ const ProjectsList = [
     technologies: [htmlIco, cssIco, javaScriptIco, gitHubIco, vercelIco],
   },
   {
-    id: 4,
+    id: 5,
     link1: "https://etch-a-sketch-gm.vercel.app/",
     link2: "https://github.com/greg19850/Etch-a-Sketch",
     icon1: "WWW",
@@ -73,7 +84,7 @@ const ProjectsList = [
     technologies: [htmlIco, cssIco, javaScriptIco, gitHubIco, vercelIco],
   },
   {
-    id: 5,
+    id: 6,
     link1: "https://to-do-app-gm.vercel.app/",
     link2: "https://github.com/greg19850/to-do-app-final",
     icon1: "WWW",
@@ -85,7 +96,7 @@ const ProjectsList = [
   },
 
   {
-    id: 6,
+    id: 7,
     link1: "https://rock-paper-scissorss-gm.netlify.app/",
     link2: "https://github.com/greg19850/Rock-Paper-Scissors",
     icon1: "WWW",
@@ -97,7 +108,7 @@ const ProjectsList = [
   },
 
   {
-    id: 7,
+    id: 8,
     link1: "https://meal-finder-gm.netlify.app/",
     link2: "https://github.com/greg19850/Meal-Finder",
     icon1: "WWW",
@@ -108,7 +119,7 @@ const ProjectsList = [
     technologies: [htmlIco, cssIco, javaScriptIco, gitHubIco, netlifyIco],
   },
   {
-    id: 8,
+    id: 9,
     link1: "https://rate-exchange-calculator-gm.vercel.app/",
     link2: "https://github.com/greg19850/Rate-Exchange-Calculator",
     icon1: "WWW",
@@ -119,7 +130,7 @@ const ProjectsList = [
     technologies: [htmlIco, cssIco, javaScriptIco, apiIco, gitHubIco, vercelIco],
   },
   {
-    id: 9,
+    id: 10,
     link1: "https://expense-tracker-gm.vercel.app/",
     link2: "https://github.com/greg19850/Expense-Tracker",
     icon1: "WWW",
@@ -130,7 +141,7 @@ const ProjectsList = [
     technologies: [htmlIco, cssIco, javaScriptIco, gitHubIco, vercelIco],
   },
   {
-    id: 10,
+    id: 11,
     link1: "https://dom-array-methods-gm.netlify.app/",
     link2: "https://github.com/greg19850/DOM-Array-Methods",
     icon1: "WWW",
@@ -141,7 +152,7 @@ const ProjectsList = [
     technologies: [htmlIco, cssIco, javaScriptIco, apiIco, gitHubIco, netlifyIco],
   },
   {
-    id: 11,
+    id: 12,
     link1: "https://spa-example-page.netlify.app/",
     link2: "https://github.com/greg19850/spa-project2",
     icon1: "WWW",
@@ -152,7 +163,7 @@ const ProjectsList = [
     technologies: [htmlIco, cssIco, javaScriptIco, reactIco, nodeJsIco, gitHubIco, netlifyIco],
   },
   {
-    id: 12,
+    id: 13,
     link1: "https://my-notes-gm.vercel.app/",
     link2: "https://github.com/greg19850/my-notes",
     icon1: "WWW",
@@ -161,18 +172,6 @@ const ProjectsList = [
     title: "My Notes",
     text: "My notes app. 3 notes categories, each category differ with note colour. Option of deleting one note at a time, or all at ones.  Created in HTML, CSS, and pure Vanilla JavaScript.",
     technologies: [htmlIco, cssIco, javaScriptIco, gitHubIco, vercelIco],
-  }
-  ,
-  {
-    id: 13,
-    link1: "https://magic8ball-gm.netlify.app/",
-    link2: "https://github.com/greg19850/magic-8-ball",
-    icon1: "WWW",
-    icon2: "Github",
-    img: magic8ball,
-    title: "Magic 8 Ball",
-    text: "Fun project, magic 8 bal which will answer any question. Ask a question, remember to end it with queestion mark, click on magic ball and see the answer. Created with use of Vanilla JavaScript, HTML and CSS.",
-    technologies: [htmlIco, cssIco, javaScriptIco, gitHubIco, netlifyIco],
   },
   {
     id: 14,
